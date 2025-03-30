@@ -6,7 +6,7 @@ const error404 = document.querySelector('.not-found');
 
 search.addEventListener('click', ()=>{
     const APIKey='f5d6ce0d0f6773a665adb26e78e11755';
-    const city = document.querySelector('.search-box input').ariaValueMax;
+    const city = document.querySelector('.search-box input').value;
 
 
     if(city==='')
@@ -35,23 +35,23 @@ search.addEventListener('click', ()=>{
 
         switch(json.weather[0].main){
             case 'Clear':
-                image.src ='images/clear.png';
+                image.src ='Images/clear.png';
                 break;
 
             case 'Rain':
-                image.src ='images/rain.png';
+                image.src ='Images/rain.png';
                 break;
 
             case 'Snow':
-                image.src ='images/snow.png'
+                image.src ='Images/snow.png'
                 break;
 
             case 'Clouds':
-                image.src ='images/cloud.png'
+                image.src ='Images/cloud.png'
                 break;
 
             case 'Haze':
-                image.src ='images/mist.png'
+                image.src ='Images/mist.png'
                 break;
             
             default:

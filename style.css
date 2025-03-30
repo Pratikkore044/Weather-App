@@ -173,9 +173,9 @@ body{
     opacity: 0;
 }
 
-.fade-in{
+.fadeIn{
     animation: 0.5s fadeIn forwards;
-    animation-delay: 0.5sec;
+    animation-delay: 0.5s;
 }
 
 @keyframes fadeIn{
